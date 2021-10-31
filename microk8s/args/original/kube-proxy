@@ -1,0 +1,4 @@
+--kubeconfig=${SNAP_DATA}/credentials/proxy.config
+--cluster-cidr=fd01::/64
+--healthz-bind-address=::1
+--bind-address=::

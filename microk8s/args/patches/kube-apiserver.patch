@@ -1,0 +1,17 @@
+--- kube-apiserver.bak	2021-10-31 21:25:17.148034803 +0000
++++ kube-apiserver	2021-10-31 21:25:20.800017628 +0000
+@@ -1,5 +1,5 @@
+ --cert-dir=${SNAP_DATA}/certs
+---service-cluster-ip-range=10.152.183.0/24
++--service-cluster-ip-range=fd98::/108
+ --authorization-mode=AlwaysAllow
+ --service-account-key-file=${SNAP_DATA}/certs/serviceaccount.key
+ --client-ca-file=${SNAP_DATA}/certs/ca.crt
+@@ -16,6 +16,7 @@
+ --service-account-issuer='https://kubernetes.default.svc'
+ --service-account-signing-key-file=${SNAP_DATA}/certs/serviceaccount.key
+ --feature-gates=RemoveSelfLink=false
++--bind-address=::
+ 
+ # Enable the aggregation layer
+ --requestheader-client-ca-file=${SNAP_DATA}/certs/front-proxy-ca.crt

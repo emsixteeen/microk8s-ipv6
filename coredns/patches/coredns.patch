@@ -1,0 +1,27 @@
+data:
+  Corefile: |-
+    .:53 {
+      errors
+      health {
+        lameduck 5s
+      }
+      ready
+
+      log . {
+        class error
+      }
+
+      kubernetes cluster.local in-addr.arpa ip6.arpa {
+        pods insecure
+        fallthrough in-addr.arpa ip6.arpa
+      }
+
+      prometheus :9153
+      forward . 2001:4860:4860::8888 2001:4860:4860::8844
+      cache 30
+      loop
+
+      reload
+      loadbalance
+    }
+

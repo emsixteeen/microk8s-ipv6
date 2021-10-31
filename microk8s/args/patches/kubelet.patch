@@ -1,0 +1,9 @@
+--- kubelet.bak	2021-10-31 21:24:55.568136923 +0000
++++ kubelet	2021-10-31 21:24:59.048120381 +0000
+@@ -15,4 +15,5 @@
+ --node-labels="microk8s.io/cluster=true"
+ --authentication-token-webhook=true
+ --cluster-domain=cluster.local
+---cluster-dns=10.152.183.10
++--cluster-dns=fd98::10
++--node-ip=::

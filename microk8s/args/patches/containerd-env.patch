@@ -1,0 +1,11 @@
+--- containerd-env.bak	2021-10-31 21:25:06.000087421 +0000
++++ containerd-env	2021-10-31 21:25:10.600065674 +0000
+@@ -20,7 +20,7 @@
+ # Attempt to change the maximum number of open file descriptors
+ # this get inherited to the running containers
+ #
+-ulimit -n 65536 || true
++ulimit -n 1048576 || true
+ 
+ # Attempt to change the maximum locked memory limit
+ # this get inherited to the running containers

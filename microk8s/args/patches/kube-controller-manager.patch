@@ -1,0 +1,9 @@
+--- kube-controller-manager.bak	2021-10-31 21:25:27.231987456 +0000
++++ kube-controller-manager	2021-10-31 21:25:32.283963820 +0000
+@@ -3,5 +3,5 @@
+ --root-ca-file=${SNAP_DATA}/certs/ca.crt
+ --cluster-signing-cert-file=${SNAP_DATA}/certs/ca.crt
+ --cluster-signing-key-file=${SNAP_DATA}/certs/ca.key
+---address=127.0.0.1
++--address=::1
+ --use-service-account-credentials
