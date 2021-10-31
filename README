@@ -1,0 +1,9 @@
+Set of scripts and patches to convert a vanilla microk8s install to be IPv6 only.
+
+Information and/or ideas compiled in part from:
+
+https://discuss.kubernetes.io/t/microk8s-ipv6-dualstack-how-to/14507
+https://github.com/sgryphon/kubernetes-ipv6
+https://sgryphon.wordpress.com/2021/01/05/kubernetes-on-ipv6-only/
+Kubernetes offical docs
+Some internal know-how
